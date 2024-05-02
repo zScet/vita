@@ -1,0 +1,117 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #498d49;
+    color: #267226;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 7px solid #ccc;
+    width: 350px; /* Ajuste a largura conforme desejado */
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 90px; /* Separar as categorias "Início" e "Produtos" */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Para o último item não ter margem à direita */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cart a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cart img {
+    width: 30px; /* Ajustar o tamanho do ícone do carrinho */
+    height: auto;
+    margin-right: 11px; /* Adicionar um espaço entre o ícone e o contador */
+}
+
+.cart-counter {
+    background-color: gray; /* Cor de fundo do contador */
+    color: black;
+    padding: 3px 8px;
+    border-radius: 50%; /* Fazer o contador redondo */
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+/* Estilos da página inicial */
+#banner {
+    text-align: center;
+}
+
+#banner img {
+    max-width: 100%;
+}
+
+.homepage .background-image {
+    /* Estilo da imagem de fundo */
+    /* Substitua pela sua imagem de fundo */
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Altura desejada da seção */
+}
+
+.info {
+    padding: 100px;
+    top: 100px;
+    margin-top: -450px;
+    right: 100px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #498d49;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+}

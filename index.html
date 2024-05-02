@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Produtos Medicinais</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para alinhar os produtos em 3 filas de 4 */
+        #produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center; /* Centraliza verticalmente os produtos */
+            padding: 20px; /* Adiciona espaçamento interno */
+        }
+
+        .produto {
+            width: calc(33.33% - 20px); /* Calcula a largura de cada produto com margens */
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .produto img {
+            width: 50%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .produto h3 {
+            margin-bottom: 10px;
+        }
+
+        .produto p {
+            margin-bottom: 10px;
+        }
+
+        .produto span {
+            font-weight: bold;
+            display: block; /* Adiciona uma quebra de linha após o preço */
+        }
+
+        .add-to-cart-button {
+            padding: 10px 20px;
+            background-color: #673de6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px; /* Adiciona margem entre o preço e o botão */
+        }
+
+        /* Adiciona animação de zoom ao passar o mouse sobre os produtos */
+        .produto:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar produto...">
+            <button>Pesquisar</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="#"><img src="img/carrinho-de-compras.png" alt="Carrinho"><span class="cart-counter">0</span></a>
+        </div>
+    </header>
+
+    <section id="banner">
+        <img src="img/chiclete.png">
+    </section>
+
+    <section id="pagina-inicial" class="homepage">
+        <div class="background-image">
+            <!-- Aqui você pode adicionar uma imagem de fundo bonita -->
+        </div>
+        <div class="info">
+            <h2>Bem-vindo à VitaSlim Shop</h2>
+            <p>Encontre os melhores produtos medicinais para sua saúde e bem-estar!</p>
+        </div>
+
+        <!-- Aqui você pode colar o código dos produtos da produtos.html -->
+        <!-- Certifique-se de copiar todo o código entre <section id="produtos"> e </section> -->
+
+        <section id="produtos">
+            <!-- Copie e cole aqui os produtos da produtos.html -->
+            
+        <div class="produto">
+            <img src="img/remedio-removebg-preview.png" alt="Produto 1">
+            <h3>Infinity 12</h3>
+            <p>Infinit 12 500mg Original Suplemento Alimentar. Tomar 1 Cápsula ao dia</p>
+            <span>R$ 66,90</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio2-removebg-preview.png" alt="Produto 2">
+            <h3>Óleo Vegetal</h3>
+            <p>Óleo Vegetal De Semente De Uva - 100ml (Vitis Vinifera) Óleo 100% natural. Compatível a todos os tipos de pele. Previne estrias. É um óleo muito utilizado na indústria cosmética em cremes hidratantes, xampus, óleos de banho, sabonetes, etc. Uso corporal, facial ou capilar. Espalhe massageando levemente. Para 100ml de óleo vegetal, adicione até 40 gotas de óleo essencial de acordo com a finalidade desejada.</p>
+            <span>R$ 44,90</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio3-removebg-preview.png" alt="Produto 3">
+            <h3>Suplemento para Ansiedade</h3>
+            <p>Suplemento ansiolítico, 60 capsulas. Foi elaborado pela farmácia Flor de Amabilis especialmente por auxiliar no emagrecimento e ansiedade. Tomar 1 capsula antes do almoço e jantar.</p>
+            <span>R$ 45,30</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio4.png" alt="Produto 4">
+            <h3>Solo Calm</h3>
+            <p>Suplemento natural para Insônia e Ansiedade, 60 cápsulas veganas. Ingerir 1 cápsula 2x/dia. Para insônia: Ingerir 1 a 2 cápsulas à noite.</p>
+            <span>R$ 44,30</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio5-removebg-preview.png" alt="Produto 5">
+            <h3>L-Tirosina - Sollo Nutrition</h3>
+            <p>60 capsulas / 300mg</p>
+            <p>L-tirosina pode ajudar os atletas que treinam em excesso, devido à sua habilidade de compensar a fadiga. - Consumir suplemento de l-tirosina pode aumentar a agilidade mental. </p>
+            <span>R$ 41,60</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio6-removebg-preview (1).png" alt="Produto 6">
+            <h3>Green Natu - Sem Dor</h3>
+            <p>Suplemento para Dor nas Juntas, Articulações e corpo. O SemDor deve ser usado diariamente 1 a 2 cápsulas por dia para que seus resultados sejam melhor aproveitados.</p>
+            <span>R$ 79,90</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio7-removebg-preview.png" alt="Produto 7">
+            <h3>Romã</h3>
+            <p>MODO SUGERIDO DE USAR: 1 cápsula após o café 1 cápsula após o almoço 1 cápsula após o jantar OBS: Ingerir com bastante água. Benefícios da Romã: Antioxidante Anti-envelhecimento Anti-inflamatório Previne Doenças Cardíacas Melhora a Imunidade Previne a Osteoartrite Auxilia na Saúde da Pele Melhora Dor de Garganta Fortalece o Cabelo. Riquíssima em Vitamina C, Proteínas, Vitamina K, Ácido Fólico, Potássio e Fibras 7</p>
+            <span>R$ 55,40</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio8-removebg-preview.png" alt="Produto 8">
+            <h3>Unilife Ômega 3</h3>
+            <p>Unilife Ômega 3 120 Cápsulas 1200 Mg. Para obter os melhores resultados, sugere-se a ingestão de 2 a 4 cápsulas ao dia, após as refeições, sempre acompanhadas de líquido. Prevenção de doenças cardíacas e problemas de circulação</p>
+            <span>R$ 39,80</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio9-removebg-preview.png" alt="Produto 9">
+            <h3>Amora Miura</h3>
+            <p>Suplemento alimentar 120 capsulas. Esse tipo de suplemento pode ser usado para prevenir deficiências alimentares causadas por alguma patologia ou circunstância específica, além de colaborar com a saúde e o bem-estar geral. É importante destacar que seu uso deve ser acompanhado por uma dieta equilibrada e hábitos de vida saudáveis. *Este produto é um suplemento dietético, não é um medicamento.</p>
+            <span>R$ 45,40</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio10-removebg-preview.png" alt="Produto 10">
+            <h3>Colágeno</h3>
+            <p>Suplemento alimentar, auxilia no fortalecimento de unhas e cabelos. A vitamina C é um potente antioxidante que estimula a produção de colágeno e melhora a absorção desta proteína. Sugestões de consumo: Ingerir 2 cápsula ao dia. Ingredientes: Peptídeos bioativos de colágeno hidrolisado, colágeno hidrolisado, ácido ascórbico (vitamina c), colágeno tipo 2.</p>
+            <span>R$ 34,99</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio11-removebg-preview.png" alt="Produto 11">
+            <h3>Maca Peruana</h3>
+            <p>Suplemento Alimentar, 500mg Contém 1 frasco com 120 cápsulas. Origem peruana Uso Diário! INGREDIENTES: Maca Peruana, Vitamina C, E e A, Cromo, Selênio e Zinco. MODO DE USO: Ingerir 2 cápsulas até 3x ao dia preferencialmente antes das principais refeições. Ingerir com Líquido. Não Contém Glúten / 100% Natural</p>
+            <span>R$ 45,99</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="img/remedio12-removebg-preview.png" alt="Produto 12">
+            <h3>Cranberry</h3>
+            <p>Suplemento alimentar, fonte de Cranberry Com Vitamina A, Selênio e Zinco Propriedades antioxidantes Auxilia a saúde circulatória Auxilia a saúde do trato urinário Cranberry 120 Cápsulas, Unilife. Sugere-se a ingestão de 2 cápsulas ao dia, após a principal refeição. Ingerir com líquido.</p>
+            <span>R$ 46,99</span>
+            <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+        </div>
+            <!-- Adicione os outros produtos conforme necessário -->
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VitaSlim Shop. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
